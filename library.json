@@ -1,0 +1,21 @@
+{
+    "name": "easyprotocol",
+    "version": "1.0.0",
+    "description": "A simple and easy solution for serial communication in Arduino.",
+    "keywords": "serial, communication, protocol",
+    "repository": 
+    {
+        "type": "git",
+        "url": "https://github.com/Technological-Solutions/easyprotocol.git"
+    },
+    "authors":
+    [
+        {
+            "name": "Nikko Deric Aranas",
+            "maintainer": true
+        },
+        {
+            "name": "Ed John Roxas"
+        }
+    ]
+}
