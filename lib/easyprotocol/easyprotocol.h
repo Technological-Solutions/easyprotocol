@@ -4,8 +4,7 @@
 #include <inttypes.h>
 #include <string.h>
 
-// function pointer
-extern void (*easyprotocol_fptr_parse)(char *, char *);
+extern void (*easyprotocol_callback)(char *, char *); // args: (char *) token, (char *) value
 
 uint8_t easyprotocol_append(char chr);
 

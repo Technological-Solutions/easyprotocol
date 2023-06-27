@@ -9,7 +9,7 @@
 char token[MAXLENGTH + 1] = {0};
 char value[MAXLENGTH + 1] = {0};
 
-void (*easyprotocol_fptr_parse)(char *, char *) = NULL;
+void (*easyprotocol_callback)(char *, char *) = NULL;
 
 uint8_t isValue = 0;
 
@@ -32,8 +32,8 @@ uint8_t easyprotocol_append(char chr) {
     break;
   case (NEWLINE):
   case (DELIMITER):
-    if (easyprotocol_fptr_parse != NULL) {
-      (*easyprotocol_fptr_parse)(token, value);
+    if (easyprotocol_callback != NULL) {
+      (*easyprotocol_callback)(token, value);
     }
 
     cleartoken();
